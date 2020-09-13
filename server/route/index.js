@@ -26,7 +26,7 @@ router.post('/api/create/note', async (req, res) => {
 
 router.get('/api/get-all/notes',async (req, res) => {
 
-    let getNotes = await Note.find({date: -1})
+    let getNotes = await Note.find();
     
     res.send({data: getNotes, success: true});
 })
