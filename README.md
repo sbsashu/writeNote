@@ -1,5 +1,5 @@
 # writeNote
-Please clone the project with `git clone <remote-url>
+Please clone the project with `git clone remote-url
 
 ##Installation
 Go to both folder client and server and run npm install command.
