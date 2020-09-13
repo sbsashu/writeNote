@@ -7,7 +7,7 @@ const ShowNote = ({}) => {
     })
     let { notes } = formData;
     const getNotes = async () => {
-        let notes = await axios.get('/notes')
+        let notes = await axios.get('/api/get-all/notes')
         setFormData()
     }
         return (

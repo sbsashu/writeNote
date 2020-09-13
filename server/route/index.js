@@ -15,10 +15,10 @@ router.post('/api/create/note', async (req, res) => {
 
     if(!note) return res.send({message: 'Note is required', success: false})
 
-    let newNote = new Note9{
+    let newNote = new Note({
         date: date,
         note: note
-    }
+    })
 
     await newNote.save();
     res.send({data: newNote, success: true});

@@ -21,13 +21,12 @@ const WriteNote = ({}) => {
                 'Content-Type': 'application/json'
             }
         };
-        let noteRecord =  await axios.post('note', {
+        let noteRecord =  await axios.post('api/create/note', {
             date: value,
             note: message
         },
         config
         )
-        console.log('NOTE', message,  noteRecord);
 
     }
 
